@@ -1,0 +1,1 @@
+# flutter_base_bloc_cubit_synodus

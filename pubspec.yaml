@@ -1,0 +1,99 @@
+name: bnv_opendata
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Dart
+  dartx: 1.1.0
+  auto_size_text: 3.0.0
+
+  #Favourite library
+  provider: 6.0.3
+  flutter_bloc: 8.1.1
+  google_fonts: 3.0.1
+  url_launcher: 6.1.5
+  path_provider: 2.0.11
+  webview_flutter: 3.0.4
+  shared_preferences: 2.0.15
+  font_awesome_flutter: 10.1.0
+  lint: 1.10.0
+  table_calendar: 3.0.6
+  image_picker: 0.8.5+3
+  flutter_svg: 1.1.4
+
+  #Library helpful
+  intl: 0.17.0
+  event_bus: 2.0.0
+  equatable: 2.0.3
+  fluttertoast: 8.0.9
+  json_annotation: 4.6.0
+  flutter_screenutil: 5.5.3+2
+  cached_network_image: 3.2.1
+  smooth_page_indicator: 1.0.0+2
+  flutter_staggered_grid_view: 0.6.2
+  rxdart: 0.27.5
+  get: 4.6.5
+  injectable: 1.5.3
+  freezed: 2.1.0+1
+  connectivity_plus: 2.3.6+1
+  analyzer: 4.6.0
+  retrofit: '>=3.0.0 <4.0.0'
+  logger: any  #for logging purpose
+  pretty_dio_logger: ^1.2.0-beta-1
+
+  # Library support for app
+  crypto: 3.0.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  retrofit_generator: '>=4.0.0 <5.0.0'
+  build_runner: #flutter pub run build_runner build --delete-conflicting-outputs
+  json_serializable: '>4.4.0'
+  injectable_generator: 1.5.4
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/font/
+  fonts:
+    - family: NunitoSans
+      fonts:
+        - asset: assets/font/nunitosansregular.ttf
+        - asset: assets/font/nunitosansblack.ttf
+          weight: 900
+        - asset: assets/font/nunitosansbold.ttf
+          weight: 800
+        - asset: assets/font/nunitosanssemibold.ttf
+          weight: 700
+
+flutter_intl:
+  enabled: true
